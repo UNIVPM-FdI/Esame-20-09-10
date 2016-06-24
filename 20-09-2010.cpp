@@ -1,19 +1,19 @@
 /*
-Il programma dovr‡, attraverso un Men˘, leggere da tastiera se l'utente vuole:
+Il programma dovr√†, attraverso un Men√π, leggere da tastiera se l'utente vuole:
 a) inserire in maniera ordinata decrescente un numero intero nella lista di elementi definita come da
-esempio. Tale lettura si dovr‡ ripetere finchÈ il valore inserito Ë negativo;
+esempio. Tale lettura si dovr√† ripetere finch√© il valore inserito √® negativo;
 b) calcolare la somma di tutti i valori presenti nella lista e stampare a video tale valore;
 c) scegliere se calcolare la somma dei soli numeri pari o dispari presenti nella lista e stamparla a video. Per
 scegliere tra pari e dispari si deve utilizzare una variabile FLAG:
-ï se in tale variabile, si inserisce da tastiera il numero 1 allora si vuole la somma dei soli numeri pari
-ï se in tale variabile, si inserisce da tastiera il numero 0 allora si vuole la somma dei soli numeri
+‚Ä¢ se in tale variabile, si inserisce da tastiera il numero 1 allora si vuole la somma dei soli numeri pari
+‚Ä¢ se in tale variabile, si inserisce da tastiera il numero 0 allora si vuole la somma dei soli numeri
 dispari
 d) stampare a video tutti i numeri interi contenuti nella lista;
 e) scrivere su di un file di testo l'intero contenuto della lista. Leggere da tastiera il nome del file su cui si
 vuole scrivere;
 f) uscire dal programma.
-Nel caso si inserisca una lettera diversa da: a,b,c,d,e,f il programma dovr‡ scrivere un messaggio di errore e
-richiedere nuovamente il Men˘.
+Nel caso si inserisca una lettera diversa da: a,b,c,d,e,f il programma dovr√† scrivere un messaggio di errore e
+richiedere nuovamente il Men√π.
 */
 #include <iostream>
 #include <fstream>
@@ -25,12 +25,12 @@ studente* succ;
 };
 typedef studente* lista;
 
-void inserisci_dati(studente& s);
-int somma_valori_totali(lista p0);
-void somma_valori(lista p0, int flag);
-void inserisci_ordinatamente(lista& inizio, studente e);
-void stampa_lista(lista p0);
-void salva_file(lista p0, char nome[]);
+void inserisci_dati(studente&);
+int somma_valori_totali(lista);
+void somma_valori(lista, int);
+void inserisci_ordinatamente(lista&, studente );
+void stampa_lista(lista);
+void salva_file(lista, char[]);
 
 int main(){
     lista inizio=0;
@@ -153,3 +153,4 @@ output.close();
 cout<<"lista salvata nel file "<<nome<<" con successo"<<endl;
 }
 
+//Coded by DarkCerfa
