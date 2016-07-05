@@ -100,7 +100,7 @@ lista p=0,q,r;
 for (q=inizio; q!=0 && q->valore > e.valore; q = q->succ)//il > ordina in modo decrescente
 p = q;
 r = new studente;
-*r=e;
+*r=e;// questa riga copia tutto il contenuto della struct nella lista (in r)
 r->succ=q;
 if (q == inizio) inizio = r;
 else p->succ = r;
